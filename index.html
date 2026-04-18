@@ -1,150 +1,897 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Fretboard: Scales - Learn Scales on the fretboard</title>
+    <meta name="description" content="Learn guitar scales, chord shapes, play Fretboard Trainer games with Guitar Fretboard: Scales.">
+    <meta name="application-name" content="Guitar Fretboard: Scales">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="keywords" content="guitar fretboard, bass fretboard, ukulele fretboard, banjo fretboard, guitar scales, guitar scales app, music scales, scale shapes, chord shapes, fretboard trainer, note trainer, guitar tunings, metronome, music theory app">
+    <meta name="apple-itunes-app" content="app-id=1623791852, app-argument=https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852">
+    <meta name="google-play-app" content="app-id=com.slaverygames.guitarfretboard">
+    <meta property="og:title" content="Guitar Fretboard: Scales - Learn Scales on the fretboard">
+    <meta property="og:description" content="Learn guitar scales, chord shapes, play Fretboard Trainer games with Guitar Fretboard: Scales.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Guitar Fretboard Apps">
+    <meta property="og:url" content="https://vngames.github.io/">
+    <meta property="og:image" content="https://vngames.github.io/Resources/main.png">
+    <meta property="og:image:alt" content="Guitar Fretboard: Scales app main screen">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guitar Fretboard: Scales - Learn Scales on the fretboard">
+    <meta name="twitter:description" content="Learn guitar scales, chord shapes, play Fretboard Trainer games with Guitar Fretboard: Scales.">
+    <meta name="twitter:image" content="https://vngames.github.io/Resources/main.png">
+    <link rel="canonical" href="https://vngames.github.io/">
 
-    <style>
-        .carousel-item {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-
-        #carousel {
-            width: 100%;
-            max-width: 700pt;
-            height: auto;
-            margin: 0 auto;
-        }
-
-        a:link {
-            color: #006591;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-
-        a:visited {
-            color: #006591;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            color: #006591;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-
-        a:active {
-            color: #006591;
-            background-color: transparent;
-            text-decoration: underline;
-        }
-    </style>
-
-    <script src="index.js"></script>
-</head>
-<body style="background-color:#94E4FC">
-    <div style="width:100%; margin:auto; padding-top:20pt">
-        <h1 style="color:white; text-align:center">Guitar fretboard: scales</h1>
-
-        <p style="color: #006591; font-weight: bold; width: 80%; margin: 0 auto; font-size: large; padding-bottom: 10pt;">
-            Guitar Fretboard app is designed to help you learn scales. Allows to customize every aspect of displaying a scale or chord notes/intervals on a guitar fretboard. Also shows each scale degree chords and modes with ability to highlight a chord on a scale.
-            Important: doesn't show how to play chords, shows only intervals of a chord and it is up to you to choose fingerings. Great for learning chords in details. Not great as a simple reference. Application is catered more to learning scales than chords unless you want to see all the chord notes on a fretboard. Plays notes when they are tapped on fretboard.
-        </p>
-
-        <div id="carousel" class="carousel slide" data-bs-interval="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="Resources\Phone1.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone2.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone3.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone4.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone5.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone6.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone7.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone8.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone9.png" class="d-block w-100">
-                </div>
-                <div class="carousel-item">
-                    <img src="Resources\Phone10.png" class="d-block w-100">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" style="margin-top:5%">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" style="margin-top:5%">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr;">
-            <div style="margin: 0 auto">
-                <a href='https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-                    <img style="width: 190px; height: auto;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' />
-                </a>
-            </div>
-            <div style="margin: 0 auto">
-                <a href="https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 150px; height: auto; margin-top: 10px">
-                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1654905600&h=f4802d3508cd275e9ac19760115d0889" alt="Download on the App Store" style="border-radius: 13px; width: 150px; height: auto;">
-                </a>
-            </div>
-        </div>
-
-        <p style="color: #006591; font-weight: bold; width: 80%; margin: 0 auto; font-size: large; padding-bottom: 10pt; ">
-            Features:<br />
-            - 45+ scales (Major scale modes, Harmonic minor scale modes, Melodic minor scale modes, Major/Minor pentatonic, Exotic scales, Bebop scales) and 35+ chords<br />
-            - Ability to add custom scales and chords<br />
-            - 35+ tunings<br />
-            - Ability to add custom tunings<br />
-            - Allows to change scale palette and add custom scale palettes<br />
-            - Allows to change fretboard style and add customs styles<br />
-            - 4 view modes including (no text, notes, intervals, both notes and intervals)<br />
-            - Allows to highlight intervals of a scale<br />
-            - Show/Hide notes outside of scale<br />
-            - Left handed mode<br />
-            - Zoom (use pinch gesture to zoom fretboard)<br />
-            - Play notes (guitar and bass)<br />
-            - Focus on scale notes only on specific area of a fretboard<br />
-            - Dark theme<br />
-            <br />
-            If you have any feature requests or encountered bugs please contact me at <a href="mailto: nazar.vorotnyak@gmail.com">nazar.vorotnyak@gmail.com</a>
-        </p>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; margin-top:20pt">
-            <div style="margin: 0 auto">
-                <a href="https://vngames.github.io/GuitarFretboardTermsOfUse/" style="font-weight:bold; font-size:large;">Terms of use</a>
-            </div>
-            <div style="margin: 0 auto">
-                <a href="https://vngames.github.io/GuitarFretboardPrivacyPolicy/" style="font-weight:bold; font-size:large;">Privacy policy</a>
-            </div>
-            <div style="margin: 0 auto">
-                <a href="https://vngames.github.io/GuitarFretboardSupport/" style="font-weight:bold; font-size:large;">Support</a>
-            </div>
-        </div>
-
-    </div>
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EWVF6FZZSW"></script>
     <script>
-        Initialize();
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EWVF6FZZSW');
     </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "https://vngames.github.io/#website",
+                    "url": "https://vngames.github.io/",
+                    "name": "Guitar Fretboard Apps",
+                    "description": "Official app landing site for Guitar Fretboard: Scales.",
+                    "publisher": {
+                        "@id": "https://vngames.github.io/#organization"
+                    },
+                    "about": {
+                        "@id": "https://vngames.github.io/#app"
+                    }
+                },
+                {
+                    "@type": "Organization",
+                    "@id": "https://vngames.github.io/#organization",
+                    "name": "Guitar Fretboard Apps",
+                    "url": "https://vngames.github.io/",
+                    "logo": "https://vngames.github.io/Resources/icon.png",
+                    "email": "mailto:nazar.vorotnyak@gmail.com",
+                    "sameAs": [
+                        "https://www.youtube.com/@guitarfretboardapps",
+                        "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
+                        "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852"
+                    ]
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://vngames.github.io/#webpage",
+                    "url": "https://vngames.github.io/",
+                    "name": "Guitar Fretboard: Scales - Learn Scales on the fretboard",
+                    "description": "Learn guitar scales, chord shapes, play Fretboard Trainer games with Guitar Fretboard: Scales.",
+                    "isPartOf": {
+                        "@id": "https://vngames.github.io/#website"
+                    },
+                    "about": {
+                        "@id": "https://vngames.github.io/#app"
+                    },
+                    "mainEntity": {
+                        "@id": "https://vngames.github.io/#app"
+                    },
+                    "significantLink": [
+                        "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
+                        "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852",
+                        "https://www.youtube.com/@guitarfretboardapps"
+                    ]
+                },
+                {
+                    "@type": "MobileApplication",
+                    "@id": "https://vngames.github.io/#app",
+                    "name": "Guitar Fretboard: Scales",
+                    "url": "https://vngames.github.io/",
+                    "description": "Learn guitar scales, chord shapes, play Fretboard Trainer games with Guitar Fretboard: Scales.",
+                    "applicationCategory": "MusicApplication",
+                    "operatingSystem": ["Android", "iOS"],
+                    "image": "https://vngames.github.io/Resources/main.png",
+                    "screenshot": [
+                        "https://vngames.github.io/Resources/main.png",
+                        "https://vngames.github.io/Resources/feature1.png",
+                        "https://vngames.github.io/Resources/feature2.png",
+                        "https://vngames.github.io/Resources/feature3.png",
+                        "https://vngames.github.io/Resources/feature4.png",
+                        "https://vngames.github.io/Resources/feature5.png",
+                        "https://vngames.github.io/Resources/feature6.png",
+                        "https://vngames.github.io/Resources/feature7.png",
+                        "https://vngames.github.io/Resources/feature8.png",
+                        "https://vngames.github.io/Resources/feature9.png",
+                        "https://vngames.github.io/Resources/feature10.png"
+                        "https://vngames.github.io/Resources/feature11.png",
+                        "https://vngames.github.io/Resources/feature12.png",
+                        "https://vngames.github.io/Resources/feature13.png",
+                    ],
+                    "publisher": {
+                        "@id": "https://vngames.github.io/#organization"
+                    },
+                    "sameAs": [
+                        "https://www.youtube.com/@guitarfretboardapps"
+                    ],
+                    "downloadUrl": [
+                        "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
+                        "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852"
+                    ],
+                    "installUrl": [
+                        "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
+                        "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852"
+                    ],
+                }
+            ]
+        }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Resources/icon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/tailwind-config.js"></script>
+
+    <!-- Common Styles -->
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+<body class="bg-gradient-to-b from-brand-100 to-white">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-200">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html#" class="flex items-center gap-3 hover:opacity-80 transition" aria-label="Go to Guitar Fretboard Apps home page">
+                    <img src="Resources/icon.png" alt="Guitar Fretboard Apps logo" class="w-10 h-10 rounded-lg">
+                    <span class="text-2xl font-bold text-brand-600">Guitar Fretboard Apps</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <!--<a href="#features" class="text-gray-700 hover:text-brand-600 transition">Features</a>-->
+                    <a href="#screenshots" class="text-gray-700 hover:text-brand-600 transition">Features</a>
+                    <a href="#cta" class="text-gray-700 hover:text-brand-600 transition">Download</a>
+                    <a href="support.html" class="text-gray-700 hover:text-brand-600 transition">Support</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Left Side: Title, Description and Download Buttons -->
+                <div class="flex-1 flex flex-col justify-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-brand-600 mb-8 text-center lg:text-left">
+                        Guitar Fretboard: Scales
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-12 text-center lg:text-left">
+                        The app is designed to help you learn scales and understand music theory.
+                        Customize every aspect of displaying scales or chord notes on a guitar fretboard.
+                        Play note, interval and scale trainer games with extensive customization options to learn the entire fretboard of the instrument of your choice
+                    </p>
+                    <div id="download" class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center">
+                        <a href='https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="transform hover:scale-105 transition" aria-label="Download Guitar Fretboard: Scales on Google Play">
+                            <img class="w-48 h-auto" alt='Download Guitar Fretboard: Scales on Google Play' src='Resources/google_play_badge.png' />
+                        </a>
+                        <a href="https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852?itsct=apps_box_badge&amp;itscg=30200" class="transform hover:scale-105 transition" aria-label="Download Guitar Fretboard: Scales on the App Store">
+                            <img class="w-48 h-auto" alt="Download Guitar Fretboard: Scales on the App Store" src="Resources/app_store_badge.png">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Screenshot - Vertically Centered and Bigger -->
+                <div class="flex-1 flex items-center justify-center">
+                    <div class="phone-frame max-w-xl">
+                        <img src="Resources/main.png" alt="Guitar Fretboard: Scales app main screen" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Overview -->
+        <!--<section id="features" class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                        Everything You Need to Learn Scales
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Comprehensive tools designed for guitarists who want to master their instrument
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">45+ Scales</h3>
+                        <p class="text-gray-600">From major and minor modes to pentatonic, exotic, and bebop scales. Explore every scale you need to expand your musical vocabulary</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M 7.9761191,5.6918553 A 2,2 0 0 1 6.3083775,7.9760828 2,2 0 0 1 4.0239535,6.3086103 2,2 0 0 1 5.6911569,4.0239899 2,2 0 0 1 7.9759737,5.6909241 L 6,6 Z" />
+                                <path d="M 7.9761191,11.691855 A 2,2 0 0 1 6.3083775,13.976083 2,2 0 0 1 4.0239535,12.30861 2,2 0 0 1 5.6911569,10.02399 2,2 0 0 1 7.9759737,11.690924 L 6,12 Z" />
+                                <path d="M 7.9761191,17.691855 A 2,2 0 0 1 6.3083775,19.976083 2,2 0 0 1 4.0239535,18.30861 2,2 0 0 1 5.6911569,16.02399 2,2 0 0 1 7.9759737,17.690924 L 6,18 Z" />
+                                <path d="M 19.976119,5.6918553 A 2,2 0 0 1 18.308378,7.9760828 2,2 0 0 1 16.023954,6.3086103 2,2 0 0 1 17.691157,4.0239899 2,2 0 0 1 19.975974,5.6909241 L 18,6 Z" />
+                                <path d="m 19.976119,11.691855 a 2,2 0 0 1 -1.667741,2.284228 2,2 0 0 1 -2.284424,-1.667473 2,2 0 0 1 1.667203,-2.28462 2,2 0 0 1 2.284817,1.666934 L 18,12 Z" />
+                                <path d="m 19.976119,17.691855 a 2,2 0 0 1 -1.667741,2.284228 2,2 0 0 1 -2.284424,-1.667473 2,2 0 0 1 1.667203,-2.28462 2,2 0 0 1 2.284817,1.666934 L 18,18 Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">1600+ Patterns</h3>
+                        <p class="text-gray-600">Master scale positions, chord shapes, and arpeggios across the entire fretboard with comprehensive pattern library</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Fully Customizable</h3>
+                        <p class="text-gray-600">Add custom scales and tunings, design your own color palettes and fretboard styles to match your preferences</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="currentColor" viewBox="0 0 360 360">
+                                <path d="M230.841,21.21c0-11.713-9.497-21.21-21.21-21.21s-21.209,9.497-21.209,21.21v86.026c0,17.546-14.271,31.814-31.814,31.814
+                                    H145.93c-17.546,0-31.814-14.268-31.814-31.814V21.21C114.115,9.497,104.619,0,92.906,0S71.696,9.497,71.696,21.21v86.026
+                                    c0,33.575,22.419,61.975,53.06,71.119v124.182h53.024V178.355c30.639-9.145,53.061-37.544,53.061-71.119V21.21z" transform="translate(28.73, 28.73)"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">35+ Tunings</h3>
+                        <p class="text-gray-600">Support for guitar, bass, and ukulele with standard, drop, and open tuning. Plus the flexibility to create custom tunings for any stringed instrument</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Multiple View Modes</h3>
+                        <p class="text-gray-600">Display scale notes, intervals, or both with advanced options to highlight specific intervals and visualize chord relationships within scales</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Dark Theme</h3>
+                        <p class="text-gray-600">Practice comfortably in any lighting condition with full dark mode support for reduced eye strain</p>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- Screenshots Section -->
+        <section id="screenshots" class="py-20 bg-brand-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                        See It in Action
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Explore the features that make Guitar Fretboard: Scales app the ultimate learning tool
+                    </p>
+                </div>
+
+                <!-- Feature Screenshots -->
+                <div class="space-y-24">
+                    <!-- Feature 1 -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature1.png" alt="Visualize Any Scale" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Visualize Any Scale</h3>
+                            <p class="feature-description">
+                                Choose from multiple built-in scales or create your own. See all the notes or intervals of a scale across the entire fretboard.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Major, Minor, Pentatonic scales</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">All modes of Major, Harmonic Minor, Melodic Minor and Harmonic Major scales</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Exotic, Bebop scales and more</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 13 -->
+                    <div class="feature-section feature-section-reverse">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature13.png" alt="Bass fretboard" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Playing Bass? No Problem</h3>
+                            <p class="feature-description">
+                                Supports multiple tunings for guitar, bass, ukulele, banjo, etc. Plus the flexibility to create custom tunings for any stringed instrument from 1 up to 14 strings.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Guitar, bass, ukulele, banjo, etc</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Standard, drop, and open tunings</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Create custom tunings</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature2.png" alt="Scale shape on the guitar fretboard" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Scale Shapes</h3>
+                            <p class="feature-description">
+                                Explore scale shapes across the guitar fretboard.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">All scale positions for the most common scales</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">CAGED shapes (Major and Minor based CAGED system)</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">3 notes per string shapes</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-section feature-section-reverse">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature3.png" alt="Chord shape on the guitar fretboard" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Chord Shapes</h3>
+                            <p class="feature-description">
+                                In addition to all chord notes across the fretboard you can see chord shapes to play the chord.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Open chords</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Closed and Barre chord shapes</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Arpeggios</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature4.png" alt="Fretboard trainer game screen" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Fretboard Trainer</h3>
+                            <p class="feature-description">
+                                Multiple games to help recognize and memorize patterns on the fretboard.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Find note/interval on the fretboard</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Identify note/interval on the fretboard</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Fill in scale position notes and more</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-section feature-section-reverse">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature5.png" alt="Different fretboard training game types" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Different Types of Games</h3>
+                            <p class="feature-description">
+                                A wide selection of games with extensive customization options to match your preferences.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Note games</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Interval games</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Scale games</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Ear training games (notes, intervals, melody)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature6.png" alt="Scale degree chords and harmonization screen" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Explore Scale Degree Chords</h3>
+                            <p class="feature-description">
+                                Discover chord progressions within scales. Understand harmonic relationships and build better chord progressions for your compositions.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">View all chords within a scale</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Harmonize any scale in one button tap</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Build effective progressions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 7 -->
+                    <div class="feature-section feature-section-reverse">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature7.png" alt="Highlighted scale chord intervals on the fretboard" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Highlight Scale Chord Intervals</h3>
+                            <p class="feature-description">
+                                Visualize scale chords on top of the parent scale. Perfect for understanding scale-chord relationships and improvisation.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Highlight chord intervals within scales</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Discover relationship between scale and scale chord intervals</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Improve improvisation skills</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 8 -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature8.png" alt="Built-in metronome" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Practice with Built-in Metronome</h3>
+                            <p class="feature-description">
+                                Keep perfect time during your practice sessions with the integrated metronome. Adjustable tempo and time signatures help you develop solid rhythm skills.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">All changes apply instantly and on the fly</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Multiple time signatures and per beat configuration</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Multiple sounds</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 9 -->
+                    <div class="feature-section feature-section-reverse">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature9.png" alt="Scale palette selection screen" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Scale Palettes</h3>
+                            <p class="feature-description">
+                                Color code notes and intervals to quickly navigate the scale.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Variety of scale palettes</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Highlight important intervals or notes that matter</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 10 -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature10.png" alt="Custom scale palette editor" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Custom Scale Palettes</h3>
+                            <p class="feature-description">
+                                Visualize intervals and notes with custom color palettes. Create your own color schemes to enhance learning and pattern recognition.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Custom colors for markers and text</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Interval color coding</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Note color coding</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 11 -->
+                    <div class="feature-section feature-section-reverse">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature11.png" alt="Fretboard style selection and display options" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Choose Your Fretboard Style</h3>
+                            <p class="feature-description">
+                                Choose the color schema of your fretboard and inlays. Adjust visiblility of fret numbers and side dots. Change side dots locations for exotic instruments.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Multiple fretboard designs</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Inlays to match almost any guitar</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Left handed support, monospace or proportional fret spacing, etc</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Feature 12 -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <div class="phone-frame max-w-2xl mx-auto">
+                                <img src="Resources/feature12.png" alt="Custom fretboard style editor" class="w-full">
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-title">Custom Fretboard Styles</h3>
+                            <p class="feature-description">
+                                Fine-tune every color aspect of your fretboard if availalble styles did not satisfy your preferences.
+                            </p>
+                            <ul class="check-list">
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Customize background colors</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Adjust string and fret colors</span>
+                                </li>
+                                <li class="check-item">
+                                    <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    <span class="check-text">Save custom color schemes</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Reviews Section -->
+        <section class="bg-brand-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                        Check out video reviews of what the app has to offer
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="https://youtu.be/Iez0kzRObP8" target="_blank" rel="noopener" class="video-card" aria-label="Watch App Guide video review on YouTube" title="App Guide video review on YouTube">
+                        <div class="video-thumbnail">
+                            <h4 class="text-xl font-bold text-white">App Guide</h4>
+                            <div class="flex flex-col items-center gap-1">
+                                <svg class="youtube-icon" viewBox="0 0 159 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M154 17.5C154 17.5 152.5 7.5 148 3C142.5 -2.5 136.5 -2.5 133.5 -3C111.5 -4.5 79.5 -4.5 79.5 -4.5C79.5 -4.5 47.5 -4.5 25.5 -3C22.5 -2.5 16.5 -2.5 11 3C6.5 7.5 5 17.5 5 17.5C5 17.5 3.5 29.5 3.5 41.5V52.5C3.5 64.5 5 76.5 5 76.5C5 76.5 6.5 86.5 11 91C16.5 96.5 23.5 96.5 27 97C39 98 79.5 98.5 79.5 98.5C79.5 98.5 111.5 98.5 133.5 97C136.5 96.5 142.5 96.5 148 91C152.5 86.5 154 76.5 154 76.5C154 76.5 155.5 64.5 155.5 52.5V41.5C155.5 29.5 154 17.5 154 17.5Z" fill="#FF0033" />
+                                    <path d="M64 70.5V26.5L103 48.5L64 70.5Z" fill="white" />
+                                </svg>
+                                <span class="youtube-link">Watch on YouTube</span>
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <p class="text-gray-600">Comprehensive overview of all app features and capabilities</p>
+                        </div>
+                    </a>
+
+                    <a href="https://youtu.be/Sl37PC2v8LQ" target="_blank" rel="noopener" class="video-card" aria-label="Watch Fretboard Trainer Guide video review on YouTube" title="Fretboard Trainer Guide video review on YouTube">
+                        <div class="video-thumbnail">
+                            <h4 class="text-xl font-bold text-white">Fretboard Trainer Guide</h4>
+                            <div class="flex flex-col items-center gap-1">
+                                <svg class="youtube-icon" viewBox="0 0 159 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M154 17.5C154 17.5 152.5 7.5 148 3C142.5 -2.5 136.5 -2.5 133.5 -3C111.5 -4.5 79.5 -4.5 79.5 -4.5C79.5 -4.5 47.5 -4.5 25.5 -3C22.5 -2.5 16.5 -2.5 11 3C6.5 7.5 5 17.5 5 17.5C5 17.5 3.5 29.5 3.5 41.5V52.5C3.5 64.5 5 76.5 5 76.5C5 76.5 6.5 86.5 11 91C16.5 96.5 23.5 96.5 27 97C39 98 79.5 98.5 79.5 98.5C79.5 98.5 111.5 98.5 133.5 97C136.5 96.5 142.5 96.5 148 91C152.5 86.5 154 76.5 154 76.5C154 76.5 155.5 64.5 155.5 52.5V41.5C155.5 29.5 154 17.5 154 17.5Z" fill="#FF0033" />
+                                    <path d="M64 70.5V26.5L103 48.5L64 70.5Z" fill="white" />
+                                </svg>
+                                <span class="youtube-link">Watch on YouTube</span>
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <p class="text-gray-600">Review of the Fretboard Trainer in detail</p>
+                        </div>
+                    </a>
+
+                    <a href="https://youtu.be/S5KVmFMglu4" target="_blank" rel="noopener" class="video-card" aria-label="Watch Scale Fretboard Trainer Games video review on YouTube" title="Scale Fretboard Trainer Games video review on YouTube">
+                        <div class="video-thumbnail">
+                            <h4 class="text-xl font-bold text-white">Scale Fretboard Trainer Games</h4>
+                            <div class="flex flex-col items-center gap-1">
+                                <svg class="youtube-icon" viewBox="0 0 159 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M154 17.5C154 17.5 152.5 7.5 148 3C142.5 -2.5 136.5 -2.5 133.5 -3C111.5 -4.5 79.5 -4.5 79.5 -4.5C79.5 -4.5 47.5 -4.5 25.5 -3C22.5 -2.5 16.5 -2.5 11 3C6.5 7.5 5 17.5 5 17.5C5 17.5 3.5 29.5 3.5 41.5V52.5C3.5 64.5 5 76.5 5 76.5C5 76.5 6.5 86.5 11 91C16.5 96.5 23.5 96.5 27 97C39 98 79.5 98.5 79.5 98.5C79.5 98.5 111.5 98.5 133.5 97C136.5 96.5 142.5 96.5 148 91C152.5 86.5 154 76.5 154 76.5C154 76.5 155.5 64.5 155.5 52.5V41.5C155.5 29.5 154 17.5 154 17.5Z" fill="#FF0033" />
+                                    <path d="M64 70.5V26.5L103 48.5L64 70.5Z" fill="white" />
+                                </svg>
+                                <span class="youtube-link">Watch on YouTube</span>
+                            </div>
+                        </div>
+                        <div class="video-content">
+                            <p class="text-gray-600">Focuses specifically on scale games of Fretboard Trainer in detail</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="cta" class="bg-brand-600 py-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                        Start Learning Today
+                    </h2>
+                    <p class="text-xl text-white/90">
+                        Download Guitar Fretboard: Scales app now and take your scales knowledge to the next level
+                    </p>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-32">
+                    <!-- Google Play Group (Left) -->
+                    <div class="flex flex-col items-center gap-6">
+                        <!-- Google Play Button -->
+                        <a href='https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="transform hover:scale-105 transition" aria-label="Download Guitar Fretboard: Scales on Google Play">
+                            <img class="w-48 h-auto" alt='Download Guitar Fretboard: Scales on Google Play' src='Resources/google_play_badge.png' />
+                        </a>
+                        <!-- Google Play QR Code -->
+                        <div class="hidden lg:flex flex-col items-center gap-3">
+                            <div class="bg-white p-3 rounded-2xl shadow-xl">
+                                <img src="Resources/qr-code-google-play.png" alt="QR code to download Guitar Fretboard: Scales on Google Play" class="w-32 h-32">
+                            </div>
+                            <!--<span class="text-white/80 text-sm font-medium">Google Play</span>-->
+                        </div>
+                    </div>
+
+                    <!-- App Store Group (Right) -->
+                    <div class="flex flex-col items-center gap-6">
+                        <!-- App Store Button -->
+                        <a href="https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852?itsct=apps_box_badge&amp;itscg=30200" class="transform hover:scale-105 transition" aria-label="Download Guitar Fretboard: Scales on the App Store">
+                            <img class="w-48 h-auto" alt="Download Guitar Fretboard: Scales on the App Store" src="Resources/app_store_badge.png">
+                        </a>
+                        <!-- App Store QR Code -->
+                        <div class="hidden lg:flex flex-col items-center gap-3">
+                            <div class="bg-white p-3 rounded-2xl shadow-xl">
+                                <img src="Resources/qr-code-app-store.png" alt="QR code to download Guitar Fretboard: Scales on the App Store" class="w-32 h-32">
+                            </div>
+                            <!--<span class="text-white/80 text-sm font-medium">App Store</span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="support" class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Guitar Fretboard Apps</h3>
+                    <p class="text-gray-400">
+                        Master guitar scales and chords with the ultimate learning tool for guitarists.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="terms.html" class="hover:text-brand-400 transition">Terms of Use</a></li>
+                        <li><a href="privacy.html" class="hover:text-brand-400 transition">Privacy Policy</a></li>
+                        <li><a href="support.html" class="hover:text-brand-400 transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Support Contact</h4>
+                    <p class="text-gray-400 mb-2">
+                        Have questions or feature requests?
+                    </p>
+                    <a href="mailto:nazar.vorotnyak@gmail.com" class="text-brand-400 hover:text-brand-300 transition">
+                        nazar.vorotnyak@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; <span id="year"></span> Guitar Fretboard Apps. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/common.js"></script>
+
 </body>
 </html>

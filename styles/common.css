@@ -1,0 +1,266 @@
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero title responsive sizing */
+@media (max-width: 640px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* ========================================
+   PHONE FRAME
+   ======================================== */
+
+/* iPhone Frame with Dynamic Island */
+.phone-frame {
+    position: relative;
+    display: block;
+    border: 4px solid #1a1a1a;
+    border-radius: clamp(0.75rem, 5vw, 2rem);
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.phone-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ========================================
+   FEATURE CARDS
+   ======================================== */
+
+/* Feature card with gradient background and hover effect */
+.feature-card {
+    background: linear-gradient(to bottom right, #CCEFFD, white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #94E4FC;
+    transition: box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Feature card icon container */
+.feature-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #08B4E0;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.feature-icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}
+
+/* ========================================
+   FEATURE SECTIONS
+   ======================================== */
+
+/* Feature section with alternating image/text layout */
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .feature-section {
+        flex-direction: row;
+    }
+
+    /* Reverse layout for alternating sections */
+    .feature-section-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+/* Feature section title */
+.feature-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+/* Feature section description */
+.feature-description {
+    font-size: 1.125rem;
+    color: #4B5563;
+    margin-bottom: 1.5rem;
+}
+
+/* ========================================
+   CHECKMARK LISTS
+   ======================================== */
+
+/* Checkmark list container */
+.check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* Individual checkmark list item */
+.check-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Checkmark icon */
+.check-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #08B4E0;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+/* Checkmark text */
+.check-text {
+    color: #374151;
+}
+
+/* ========================================
+   VIDEO CARDS
+   ======================================== */
+
+/* Video card wrapper */
+.video-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.video-card:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Video thumbnail area */
+.video-thumbnail {
+    position: relative;
+    background-color: #08B4E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    aspect-ratio: 16/9;
+    padding: 2rem 1rem;
+}
+
+/* Video card content */
+.video-content {
+    padding: 1.5rem;
+}
+
+/* YouTube icon styling */
+.youtube-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* YouTube link text */
+.youtube-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s;
+}
+
+.video-card:hover .youtube-link {
+    color: #CCEFFD;
+}
+
+/* ========================================
+   SECTION CONTAINERS
+   ======================================== */
+
+/* Page section container */
+.page-section {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 1rem;
+}
+
+@media (min-width: 640px) {
+    .page-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Content card with shadow */
+.content-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .content-card {
+        padding: 3rem;
+    }
+}
+
+/* Section header */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #4B5563;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
