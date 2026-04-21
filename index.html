@@ -35,89 +35,62 @@
 
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "WebSite",
-                    "@id": "https://guitarfretboardapps.com/#website",
-                    "url": "https://guitarfretboardapps.com/",
-                    "name": "Guitar Fretboard Apps",
-                    "description": "Official app landing site for Guitar Fretboard: Scales.",
-                    "publisher": {
-                        "@id": "https://guitarfretboardapps.com/#organization"
-                    }
-                },
-                {
-                    "@type": "Organization",
-                    "@id": "https://guitarfretboardapps.com/#organization",
-                    "name": "Guitar Fretboard Apps",
-                    "url": "https://guitarfretboardapps.com/",
-                    "logo": "https://guitarfretboardapps.com/Resources/icon.png",
-                    "email": "nazar.vorotnyak@gmail.com",
-                    "sameAs": [
-                        "https://www.youtube.com/@guitarfretboardapps",
-                        "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
-                        "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852"
-                    ]
-                },
-                {
-                    "@type": "WebPage",
-                    "@id": "https://guitarfretboardapps.com/#webpage",
-                    "url": "https://guitarfretboardapps.com/",
-                    "name": "Guitar Fretboard: Scales - Learn Scales on the fretboard",
-                    "description": "Learn guitar scales, chord shapes, play Fretboard Trainer games with Guitar Fretboard: Scales.",
-                    "isPartOf": {
-                        "@id": "https://guitarfretboardapps.com/#website"
-                    },
-                    "about": {
-                        "@id": "https://guitarfretboardapps.com/#app"
-                    },
-                    "mainEntity": {
-                        "@id": "https://guitarfretboardapps.com/#app"
-                    },
-                    "significantLink": [
-                        "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
-                        "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852",
-                        "https://www.youtube.com/@guitarfretboardapps"
-                    ]
-                },
-                {
-                    "@type": "MobileApplication",
-                    "@id": "https://guitarfretboardapps.com/#app",
-                    "name": "Guitar Fretboard: Scales",
-                    "url": "https://guitarfretboardapps.com/",
-                    "description": "Learn guitar scales, chord shapes, play Fretboard Trainer games with Guitar Fretboard: Scales.",
-                    "applicationCategory": "MusicApplication",
-                    "operatingSystem": "Android, iOS",
-                    "image": "https://guitarfretboardapps.com/Resources/main.png",
-                    "screenshot": [
-                        "https://guitarfretboardapps.com/Resources/main.png",
-                        "https://guitarfretboardapps.com/Resources/feature1.png",
-                        "https://guitarfretboardapps.com/Resources/feature2.png",
-                        "https://guitarfretboardapps.com/Resources/feature3.png",
-                        "https://guitarfretboardapps.com/Resources/feature4.png",
-                        "https://guitarfretboardapps.com/Resources/feature5.png",
-                        "https://guitarfretboardapps.com/Resources/feature6.png",
-                        "https://guitarfretboardapps.com/Resources/feature7.png",
-                        "https://guitarfretboardapps.com/Resources/feature8.png",
-                        "https://guitarfretboardapps.com/Resources/feature9.png",
-                        "https://guitarfretboardapps.com/Resources/feature10.png",
-                        "https://guitarfretboardapps.com/Resources/feature11.png",
-                        "https://guitarfretboardapps.com/Resources/feature12.png",
-                        "https://guitarfretboardapps.com/Resources/feature13.png"
-                    ],
-                    "publisher": {
-                        "@id": "https://guitarfretboardapps.com/#organization"
-                    },
-                    "sameAs": [
-                        "https://www.youtube.com/@guitarfretboardapps"
-                    ],
-                    "downloadUrl": [
-                        "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
-                        "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852"
-                    ]
-                }
-            ]
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://guitarfretboardapps.com/#organization",
+              "name": "Guitar Fretboard Apps",
+              "url": "https://guitarfretboardapps.com/",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://guitarfretboardapps.com/Resources/icon.png"
+              },
+              "sameAs": [
+                "https://www.youtube.com/@guitarfretboardapps"
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://guitarfretboardapps.com/#website",
+              "url": "https://guitarfretboardapps.com/",
+              "name": "Guitar Fretboard Apps",
+              "publisher": {
+                "@id": "https://guitarfretboardapps.com/#organization"
+              }
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://guitarfretboardapps.com/#webpage",
+              "url": "https://guitarfretboardapps.com/",
+              "name": "Guitar Fretboard: Scales - Learn Scales on the fretboard",
+              "description": "Learn guitar scales, chord shapes, and memorize fretboard with interactive games.",
+              "inLanguage": "en",
+              "isPartOf": {
+                "@id": "https://guitarfretboardapps.com/#website"
+              },
+              "mainEntity": {
+                "@id": "https://guitarfretboardapps.com/#app"
+              }
+            },
+            {
+              "@type": "MobileApplication",
+              "@id": "https://guitarfretboardapps.com/#app",
+              "name": "Guitar Fretboard: Scales",
+              "url": "https://guitarfretboardapps.com/",
+              "description": "Learn guitar scales, chord shapes, and memorize fretboard with interactive games.",
+              "applicationCategory": "Music",
+              "operatingSystem": "Android, iOS",
+              "image": "https://guitarfretboardapps.com/Resources/main.png",
+              "publisher": {
+                "@id": "https://guitarfretboardapps.com/#organization"
+              },
+              "installUrl": [
+                "https://play.google.com/store/apps/details?id=com.slaverygames.guitarfretboard",
+                "https://apps.apple.com/us/app/guitar-fretboard-scales/id1623791852"
+              ]
+            }
+          ]
         }
     </script>
 
